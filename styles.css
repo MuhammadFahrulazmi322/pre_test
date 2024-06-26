@@ -29,6 +29,12 @@ body {
 .text-subtitle {
   color:#868686;
 }
+.description_color{
+  color: #9a9a9a;
+}
+.blog_title{
+  color: #4d4d4d;
+}
 
 .bg-primaryBrown {
   background-color: #9B622F;
@@ -36,6 +42,9 @@ body {
 
 .bg-primaryBrown:hover {
   background-color: #854d24;
+}
+.bg_gray {
+  background-color: #f7f7f7;
 }
 
 .hero-section {
@@ -45,7 +54,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.moissanite{
+  background-color: #242424;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 
 .blackFooter{
