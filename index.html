@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LE Diamonds</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="font-sans antialiased text-gray-900">
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <div class="flex items-center">
+        <a href="#" class="text-2xl font-bold mr-4">LE DIAMONDS</a>
+        
+      </div>
+      <nav id="menu" class="hidden lg:flex space-x-6">
+        <a href="#" class="text-gray-700 hover:text-gray-900">Collections</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Our Story</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Blogs</a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">Free Delivery for orders above $199</a>
+      </nav>
+      <div class="flex space-x-4">
+        <a href="#" class="text-customBrown hover:text-gray-900">
+            <i class="fas fa-shopping-cart fa-lg"></i>
+        </a>
+        <a href="#" class="text-customBrown hover:text-gray-900 hidden lg:block">
+          <i class="fas fa-user fa-lg"></i>
+        </a>
+      </div>
+      <div class="lg:hidden">
+        <button id="menu-btn" class="text-gray-700 focus:outline-none">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden">
+      <nav class="px-4 py-6">
+        <a href="#" class="block text-gray-700 hover:text-gray-900 mb-2">Collections</a>
+        <a href="#" class="block text-gray-700 hover:text-gray-900 mb-2">Our Story</a>
+        <a href="#" class="block text-gray-700 hover:text-gray-900 mb-2">Blogs</a>
+        <a href="#" class="block text-gray-700 hover:text-gray-900 mb-2">Free Delivery for orders above $199</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold mb-4">Elegance & Eternity.</h1>
+      <p class="text-gray-600 mb-8">Finely crafted lab-grown moissanite jewellery</p>
+      <a href="#" class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600">Shop Collections</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="container mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="text-center">
+      <img src="https://placehold.co/100x100" alt="Free Delivery" class="mx-auto mb-4">
+      <h3 class="font-bold mb-2">Free Delivery</h3>
+      <p class="text-gray-600">For orders over $199</p>
+    </div>
+    <div class="text-center">
+      <img src="https://placehold.co/100x100" alt="30 Days Return" class="mx-auto mb-4">
+      <h3 class="font-bold mb-2">30 Days Return</h3>
+      <p class="text-gray-600">No questions asked</p>
+    </div>
+    <div class="text-center">
+      <img src="https://placehold.co/100x100" alt="Ethically Made" class="mx-auto mb-4">
+      <h3 class="font-bold mb-2">Ethically Made</h3>
+      <p class="text-gray-600">From sustainable sources</p>
+    </div>
+    <div class="text-center">
+      <img src="https://placehold.co/100x100" alt="Secure Payments" class="mx-auto mb-4">
+      <h3 class="font-bold mb-2">Secure Payments</h3>
+      <p class="text-gray-600">For a seamless checkout</p>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="text-center hover-grow">
+        <img src="https://placehold.co/300x300" alt="New Jewellery Design" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">New Jewellery Design</h3>
+        <a href="#" class="text-yellow-500">Shop Now</a>
+      </div>
+      <div class="text-center hover-grow">
+        <img src="https://placehold.co/300x300" alt="Earrings Collection" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Earrings Collection</h3>
+        <a href="#" class="text-yellow-500">Shop Now</a>
+      </div>
+      <div class="text-center hover-grow">
+        <img src="https://placehold.co/300x300" alt="Bracelets Collection" class="mx-auto mb-4">
+        <h3 class="font-bold mb-2">Bracelets Collection</h3>
+        <a href="#" class="text-yellow-500">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h2 class="text-3xl font-bold mb-4">Luxury Defined By Style, Not Price.</h2>
+        <p class="text-gray-600 mb-4">Moissanites are lab-grown gemstones, crafted by the most skilled hands to create a sparkle that is in a class of its own.</p>
+        <p class="text-gray-600">Every piece of moissanite comes with a certification as a testament to its quality. The gemstone is also durable, second only to diamonds in terms of hardness. This means that any fine jewellery pieces from LE Diamonds can be easily scratched and keep their fire well. Due to its hardness, we are also able to create daring cuts that will shine brightly on you.</p>
+      </div>
+      <div class="md:w-1/2">
+        <img src="https://placehold.co/400x400" alt="Jewellery Image" class="mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Selling Products Section -->
+  <section class="container mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Best Selling Products</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center">
+        <img src="https://placehold.co/200x200" alt="Product 1" class="mx-auto mb-4 hover-grow">
+        <h3 class="font-bold mb-2">Stéphane</h3>
+        <p class="text-gray-600 mb-2">$665.00 - $749.00</p>
+        <a href="#" class="text-yellow-500">Shop Now</a>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200" alt="Product 2" class="mx-auto mb-4 hover-grow">
+        <h3 class="font-bold mb-2">André</h3>
+        <p class="text-gray-600 mb-2">$845.00 - $1,000.00</p>
+        <a href="#" class="text-yellow-500">Shop Now</a>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200" alt="Product 3" class="mx-auto mb-4 hover-grow">
+        <h3 class="font-bold mb-2">Stéphane</h3>
+        <p class="text-gray-600 mb-2">$665.00 - $749.00</p>
+        <a href="#" class="text-yellow-500">Shop Now</a>
+      </div>
+      <div class="text-center">
+        <img src="https://placehold.co/200x200" alt="Product 4" class="mx-auto mb-4 hover-grow">
+        <h3 class="font-bold mb-2">André</h3>
+        <p class="text-gray-600 mb-2">$845.00 - $1,000.00</p>
+        <a href="#" class="text-yellow-500">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Blogs Section -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Recent Blogs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-grow">
+          <img src="https://placehold.co/300x200" alt="Blog 1" class="w-full mb-4">
+          <h3 class="font-bold mb-2">Can Moissanite Be Your Next "Superstar" Jewelry Stone?</h3>
+          <p class="text-gray-600">Jewels and gemstones add to the traditional beauty of a woman, especially when they are meticulously crafted...</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-grow">
+          <img src="https://placehold.co/300x200" alt="Blog 2" class="w-full mb-4">
+          <h3 class="font-bold mb-2">Is Moissanite More Valuable Than a Diamond?</h3>
+          <p class="text-gray-600">Are you on the lookout for the most individual, unique, and radiant jewel to wear this season...</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow hover-grow">
+          <img src="https://placehold.co/300x200" alt="Blog 3" class="w-full mb-4">
+          <h3 class="font-bold mb-2">Engagement Ring Moissanite Singapore Buying Guide</h3>
+          <p class="text-gray-600">The wedding of your dreams means an engagement ring that is beautiful, that embodies your love for your...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get Inspired Section -->
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Get Inspired</h2>
+      <div class="relative overflow-hidden">
+        <div class="carousel flex transition-transform duration-500 ease-in-out">
+          <div class="flex space-x-4">
+            <img src="https://placehold.co/150x150" alt="Inspired Image 1" class="hover-grow">
+            <img src="https://placehold.co/150x150" alt="Inspired Image 2" class="hover-grow">
+            <img src="https://placehold.co/150x150" alt="Inspired Image 3" class="hover-grow">
+            <img src="https://placehold.co/150x150" alt="Inspired Image 4" class="hover-grow">
+            <img src="https://placehold.co/150x150" alt="Inspired Image 5" class="hover-grow">
+          </div>
+        </div>
+        <div class="dots flex justify-center mt-4">
+          <button class="dot w-4 h-4 bg-gray-400 rounded-full mx-1"></button>
+          <button class="dot w-4 h-4 bg-gray-400 rounded-full mx-1"></button>
+          <button class="dot w-4 h-4 bg-gray-400 rounded-full mx-1"></button>
+          <button class="dot w-4 h-4 bg-gray-400 rounded-full mx-1"></button>
+          <button class="dot w-4 h-4 bg-gray-400 rounded-full mx-1"></button>
+        </div>
+      </div>
+      <p class="text-center mt-4">
+        Follow us at <a href="#" class="text-yellow-500">@le_diamonds</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <h4 class="font-bold mb-4">LE DIAMONDS</h4>
+        <p>With LE Diamonds, we hope to empower and inspire women of all ages, giving them the courage and confidence to power through each day with their choice of elegant and charming, contemporary jewellery.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4">COLLECTIONS</h4>
+        <ul>
+          <li><a href="#" class="hover:underline">Rings</a></li>
+          <li><a href="#" class="hover:underline">Earrings</a></li>
+          <li><a href="#" class="hover:underline">Necklaces</a></li>
+          <li><a href="#" class="hover:underline">Pendants</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4">INFORMATION</h4>
+        <ul>
+          <li><a href="#" class="hover:underline">FAQ</a></li>
+          <li><a href="#" class="hover:underline">Help & Support</a></li>
+          <li><a href="#" class="hover:underline">Terms of Service</a></li>
+          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4">KNOW MORE</h4>
+        <ul>
+          <li><a href="#" class="hover:underline">All about diamonds</a></li>
+          <li><a href="#" class="hover:underline">Partnerships</a></li>
+        </ul>
+        <h4 class="font-bold mb-4 mt-4">CONTACT INFO</h4>
+        <p>+1(603) 924-4644</p>
+        <p>info@lediamonds.com</p>
+      </div>
+    </div>
+    <div class="mt-8 text-center">
+      <p>&copy; 2024 LE Diamonds - All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Floating Action Button -->
+  <a href="https://wa.me/1234567890" class="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300" target="_blank">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

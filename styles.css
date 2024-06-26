@@ -1,0 +1,6 @@
+.hover-grow:hover {
+    transform: scale(1.05);
+  }
+  .text-customBrown {
+    color: #9B622F;
+  }
