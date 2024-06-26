@@ -7,53 +7,62 @@
   <title>LE Diamonds</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 
-<body class="font-sans antialiased text-gray-900">
+<body class="font-sans antialiased  text-gray-900">
   <!-- Navbar -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-      <div class="flex items-center">
-        <a href="#" class="text-2xl font-bold mr-4">LE DIAMONDS</a>
-        
+  <header class=" bg-white shadow">
+    <div class="container mx-auto px-4 py-6 flex flex-row justify-between items-center">
+      <div class="flex  items-center space-x-16">
+         <img src="assets/LE DIAMONDS.svg" alt="Logo Header">
+        <nav id="menu" class="hidden lg:flex space-x-16">
+          <a href="#" class="font-cabin text-gray-700 text-base hover:text-gray-900">Collections</a>
+          <a href="#" class="font-cabin text-gray-700 text-base hover:text-gray-900">Our Story</a>
+          <a href="#" class="font-cabin text-gray-700 text-base hover:text-gray-900">Blogs</a>
+        </nav>
       </div>
-      <nav id="menu" class="hidden lg:flex space-x-6">
-        <a href="#" class="text-gray-700 hover:text-gray-900">Collections</a>
-        <a href="#" class="text-gray-700 hover:text-gray-900">Our Story</a>
-        <a href="#" class="text-gray-700 hover:text-gray-900">Blogs</a>
-        <a href="#" class="text-gray-700 hover:text-gray-900">Free Delivery for orders above $199</a>
-      </nav>
-      <div class="flex space-x-4">
-        <a href="#" class="text-customBrown hover:text-gray-900">
+      <div class="flex space-x-4 items-center">
+        <a href="#" class="font-cabin text-gray-700 uppercase hover:text-gray-900 hidden lg:block">Free Delivery for orders above $199</a>
+
+        <a href="#" class="text-primaryBrown hover:text-gray-900">
             <i class="fas fa-shopping-cart fa-lg"></i>
         </a>
-        <a href="#" class="text-customBrown hover:text-gray-900 hidden lg:block">
+        <a href="#" class="text-primaryBrown hover:text-gray-900 hidden lg:block">
           <i class="fas fa-user fa-lg"></i>
         </a>
+        <div class="lg:hidden">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <i class="fas fa-bars fa-2x"></i>
+          </button>
+        </div>
       </div>
-      <div class="lg:hidden">
-        <button id="menu-btn" class="text-gray-700 focus:outline-none">
-          <i class="fas fa-bars fa-2x"></i>
-        </button>
-      </div>
+      
     </div>
     <div id="mobile-menu" class="hidden lg:hidden">
       <nav class="px-4 py-6">
         <a href="#" class="block text-gray-700 hover:text-gray-900 mb-2">Collections</a>
         <a href="#" class="block text-gray-700 hover:text-gray-900 mb-2">Our Story</a>
         <a href="#" class="block text-gray-700 hover:text-gray-900 mb-2">Blogs</a>
-        <a href="#" class="block text-gray-700 hover:text-gray-900 mb-2">Free Delivery for orders above $199</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-gray-50 py-16">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl font-bold mb-4">Elegance & Eternity.</h1>
-      <p class="text-gray-600 mb-8">Finely crafted lab-grown moissanite jewellery</p>
-      <a href="#" class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600">Shop Collections</a>
+  <section class="hero-section bg-gray-50 ">
+    <div class="container mx-auto px-4 space-y-4">
+      <div class="flex flex-col space-y-10">
+        <p class="font-cabin text-sm uppercase"> - MORE THAN JUST JEWELLERY</p>
+        <div class="flex flex-col lg:flex-row gap-2">
+          <h1 class="text-6xl lg:text-6xl leading-[72px] font-medium font-playfair text-black">Elegance</h1>
+          <h1 class="text-6xl lg:text-6xl leading-[72px] font-medium font-playfair text-black">& Eternity.</h1>
+        </div>
+        <p class="text-subtitle text-sm uppercase">Finely crafted lab-grown moissanite jewellery</p>
+      </div>
+      <div class="flex flex-col lg:flex-row items-center">
+      <button class="font-poppins bg-primaryBrown text-white px-6 py-3  hover:bg-primaryBrown">Shop Collections</button>
+      </div>
     </div>
   </section>
 
@@ -200,42 +209,57 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-8">
-    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <h4 class="font-bold mb-4">LE DIAMONDS</h4>
-        <p>With LE Diamonds, we hope to empower and inspire women of all ages, giving them the courage and confidence to power through each day with their choice of elegant and charming, contemporary jewellery.</p>
+  <footer class="blackFooter text-gray-400 py-16">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div class="col-span-1 lg:col-span-2">
+        <h4 class="text-white font-bold mb-4 font-playfair">LE DIAMONDS</h4>
+        <p class="font-cabin mb-4">With LE Diamonds, we hope to empower and inspire women of all ages, giving them the courage and confidence to power through each day with their choice of elegant and charming contemporary jewellery.</p>
+        <div class="flex space-x-4">
+          <img src="https://placehold.co/50x30" alt="PayPal">
+          <img src="https://placehold.co/50x30" alt="Visa">
+          <img src="https://placehold.co/50x30" alt="MasterCard">
+          <img src="https://placehold.co/50x30" alt="American Express">
+        </div>
       </div>
-      <div>
-        <h4 class="font-bold mb-4">COLLECTIONS</h4>
-        <ul>
-          <li><a href="#" class="hover:underline">Rings</a></li>
-          <li><a href="#" class="hover:underline">Earrings</a></li>
-          <li><a href="#" class="hover:underline">Necklaces</a></li>
-          <li><a href="#" class="hover:underline">Pendants</a></li>
-        </ul>
+      <div class="flex flex-row ">
+        <div>
+          <h4 class="text-white font-bold mb-4 font-playfair">COLLECTIONS</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline font-cabin">Rings</a></li>
+            <li><a href="#" class="hover:underline font-cabin">Earrings</a></li>
+            <li><a href="#" class="hover:underline font-cabin">Necklaces</a></li>
+            <li><a href="#" class="hover:underline font-cabin">Bracelets</a></li>
+            <li><a href="#" class="hover:underline font-cabin">Pendants</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 font-playfair">INFORMATION</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline font-cabin">FAQ</a></li>
+            <li><a href="#" class="hover:underline font-cabin">Help & Support</a></li>
+            <li><a href="#" class="hover:underline font-cabin">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline font-cabin">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 font-playfair">KNOW MORE</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline font-cabin">All about clarities</a></li>
+            <li><a href="#" class="hover:underline font-cabin">Partnerships</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-bold mb-4 font-playfair">CONTACT INFO</h4>
+          <p class="font-cabin">(+603) 9541 8461</p>
+          <p class="font-cabin">info@lediamonds.com</p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-white hover:text-gray-500"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-white hover:text-gray-500"><i class="fab fa-instagram fa-lg"></i></a>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4 class="font-bold mb-4">INFORMATION</h4>
-        <ul>
-          <li><a href="#" class="hover:underline">FAQ</a></li>
-          <li><a href="#" class="hover:underline">Help & Support</a></li>
-          <li><a href="#" class="hover:underline">Terms of Service</a></li>
-          <li><a href="#" class="hover:underline">Privacy Policy</a></li>
-        </ul>
       </div>
-      <div>
-        <h4 class="font-bold mb-4">KNOW MORE</h4>
-        <ul>
-          <li><a href="#" class="hover:underline">All about diamonds</a></li>
-          <li><a href="#" class="hover:underline">Partnerships</a></li>
-        </ul>
-        <h4 class="font-bold mb-4 mt-4">CONTACT INFO</h4>
-        <p>+1(603) 924-4644</p>
-        <p>info@lediamonds.com</p>
-      </div>
-    </div>
-    <div class="mt-8 text-center">
+    <div class="mt-8 text-right">
       <p>&copy; 2024 LE Diamonds - All Rights Reserved</p>
     </div>
   </footer>

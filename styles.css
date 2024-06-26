@@ -1,6 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+
+.font-cabin {
+  font-family: 'Cabin', sans-serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
 .hover-grow:hover {
     transform: scale(1.05);
   }
-  .text-customBrown {
+.text-primaryBrown {
     color: #9B622F;
+}
+.text-subtitle {
+  color:#868686;
+}
+
+.bg-primaryBrown {
+  background-color: #9B622F;
+}
+
+.bg-primaryBrown:hover {
+  background-color: #854d24;
+}
+
+.hero-section {
+  padding: 120px 0px 120px 0px;
+  background-image: url('assets/hero-dekstop.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.blackFooter{
+  background-color: #222224;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 0 0 0 0;
+    margin-top: 50px;
+    background-image: url('assets/hero-mobile.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+}
