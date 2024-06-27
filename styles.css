@@ -49,6 +49,10 @@ body {
 .bg_gray_best_selling {
   background-color: #f7f7f7;
 }
+.text_gray_feature {
+  color: #868686;
+  
+}
 .bg-product-1{
   background-image: url('assets/bg-col-1.svg');
   background-size: cover;

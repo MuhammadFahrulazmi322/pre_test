@@ -50,17 +50,20 @@
           >
 
           <a href="#" class="text-primaryBrown hover:text-gray-900">
-            <i class="fas fa-shopping-cart fa-lg"></i>
+            <img src="assets/cart.svg" alt="cart" />
           </a>
           <a
             href="#"
             class="text-primaryBrown hover:text-gray-900 hidden lg:block"
           >
-            <i class="fas fa-user fa-lg"></i>
+            <img src="assets/user.svg" alt="cart" />
           </a>
           <div class="lg:hidden">
-            <button id="menu-btn" class="text-gray-700 focus:outline-none">
-              <i class="fas fa-bars fa-2x"></i>
+            <button
+              id="menu-btn"
+              class="focus:outline-none justify-center items-center mt-2"
+            >
+              <img src="assets/menu-burger.svg" alt="cart" width="28" />
             </button>
           </div>
         </div>
@@ -84,7 +87,10 @@
     <section class="hero-section my-4">
       <div class="container mx-auto px-4 space-y-4">
         <div class="flex flex-col space-y-10">
-          <p class="font-cabin text-sm uppercase">- MORE THAN JUST JEWELLERY</p>
+          <div class="flex flex-row gap-2">
+            <img src="assets/line.svg" alt="garis" />
+            <p class="font-cabin text-sm uppercase">MORE THAN JUST JEWELLERY</p>
+          </div>
           <div class="flex flex-col lg:flex-row gap-2">
             <h1
               class="text-6xl lg:text-6xl leading-[72px] font-medium font-playfair text-black"
@@ -113,46 +119,62 @@
 
     <!-- Features Section -->
     <section
-      class="container mx-auto px-4 py-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      class="container mx-auto px-4 lg:px-12 py-16 grid grid-cols-2 lg:grid-cols-4 gap-8"
     >
-      <div class="flex flex-row items-center gap-4">
+      <div class="flex flex-row items-start gap-4">
         <img src="assets/truck.svg" alt="Free Delivery" />
         <div class="flex flex-col">
           <h3 class="font-bold">Free Delivery</h3>
-          <p class="text-gray-600">For orders over $199</p>
+          <p class="text_gray_feature text-sm lg:text-base">
+            For orders over $199
+          </p>
         </div>
       </div>
-      <div class="flex flex-row items-center gap-4">
+      <div class="flex flex-row items-start gap-4">
         <img src="assets/shake.svg" alt="30 Days Return" />
         <div class="flex flex-col">
           <h3 class="font-bold">30 Days Return</h3>
-          <p class="text-gray-600">No questions asked</p>
+          <p class="text_gray_feature text-sm lg:text-base">
+            No questions asked
+          </p>
         </div>
       </div>
 
-      <div class="flex flex-row items-center gap-4">
+      <div class="flex flex-row items-start gap-4">
         <img src="assets/ethic.svg" alt="Ethically Made" />
         <div class="flex flex-col">
           <h3 class="font-bold">Ethically Made</h3>
-          <p class="text-gray-600">From sustainable sources</p>
+          <p class="text_gray_feature text-sm lg:text-base">
+            From sustainable sources
+          </p>
         </div>
       </div>
-      <div class="flex flex-row items-center gap-4">
+      <div class="flex flex-row items-start gap-4">
         <img src="assets/visa.svg" alt="Secure Payments" />
         <div class="flex flex-col">
           <h3 class="font-bold">Secure Payments</h3>
-          <p class="text-gray-600">For a seamless checkout</p>
+          <p class="text_gray_feature text-sm lg:text-base">
+            For a seamless checkout
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Collections Section -->
-    <section class="py-16">
-      <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-5">
+    <section class="py-4">
+      <div
+        class="container mx-auto lg:px-4 grid grid-cols-2 lg:grid-cols-4 gap-y-2 lg:gap-y-0"
+      >
         <!-- Collection Item 1 -->
-        <div class="relative bg-product-1 col-span-1 lg:col-span-3 flex items-center justify-center">
+        <div
+          class="order-1 lg:order-1 bg-product-1 col-span-2 lg:col-span-2 flex items-center"
+        >
           <div class="flex flex-row items-center gap-4">
-            <img src="assets/NEW_JEWELLERY_DESIGN.png" alt="New Jewellery Design" class="w-1/2 lg:w-full object-contain">
+            <img
+              src="assets/NEW_JEWELLERY_DESIGN.png"
+              alt="New Jewellery Design"
+              class="w-1/2 lg:w-auto object-cover"
+            />
             <div class="flex flex-col">
               <h3 class="font-bold text-black text-sm">NEW JEWELLERY DESIGN</h3>
               <a href="#" class="text-black text-sm">SHOP NOW</a>
@@ -160,33 +182,57 @@
           </div>
         </div>
         <!-- Collection Item 2 -->
-        <div class="relative bg-product-2 col-span-1 lg:col-span-1 flex items-center justify-center">
-          <div class="absolute bottom-4 left-4 text-left">
+        <div
+          class="order-2 lg:order-2 bg-product-2 col-span-1 lg:col-span-1 flex-col items-center"
+        >
+          <img
+            src="assets/EARRINGS_COLLECTION.png"
+            alt="Earrings Collection"
+            class="w-full object-cover"
+          />
+          <div class="flex flex-col px-4 py-2">
             <h3 class="font-bold text-black text-sm">EARRINGS COLLECTION</h3>
             <a href="#" class="text-black text-sm">SHOP NOW</a>
           </div>
-          <img src="assets/EARRINGS_COLLECTION.png" alt="Earrings Collection" class="w-1/2 lg:w-full object-contain">
         </div>
         <!-- Collection Item 3 -->
-        <div class="relative bg-product-3 col-span-1 lg:col-span-1 flex items-center justify-center">
-          <div class="absolute bottom-4 left-4 text-left">
+        <div
+          class="order-3 lg:order-3 bg-product-3 col-span-1 lg:col-span-1 flex-col items-center"
+        >
+          <img
+            src="assets/BRACELETS_COLLECTION.png"
+            alt="Bracelets Collection"
+            class="w-full object-cover"
+          />
+          <div class="flex flex-col px-4 py-2">
             <h3 class="font-bold text-black text-sm">BRACELETS COLLECTION</h3>
             <a href="#" class="text-black text-sm">SHOP NOW</a>
           </div>
-          <img src="assets/BRACELETS_COLLECTION.png" alt="Bracelets Collection" class="w-1/2 lg:w-full object-contain">
         </div>
         <!-- Collection Item 4 -->
-        <div class="relative bg-product-4 col-span-1 lg:col-span-1 flex items-center justify-center">
-          <div class="absolute bottom-4 left-4 text-left">
+        <div
+          class="order-5 lg:order-4 bg-product-4 col-span-1 lg:col-span-1 flex-col items-center"
+        >
+          <img
+            src="assets/NECKLACES_COLLECTION.png"
+            alt="Necklaces Collection"
+            class="w-full object-cover"
+          />
+          <div class="flex flex-col px-4 py-2">
             <h3 class="font-bold text-black text-sm">NECKLACES COLLECTION</h3>
             <a href="#" class="text-black text-sm">SHOP NOW</a>
           </div>
-          <img src="assets/NECKLACES_COLLECTION.png" alt="Necklaces Collection" class="w-1/2 lg:w-full object-contain">
         </div>
         <!-- Collection Item 5 -->
-        <div class="relative bg-product-5 col-span-1 lg:col-span-3 flex items-center justify-center">
-          <div class="flex flex-row items-center gap-4">
-            <img src="assets/RINGS_COLLECTION.png" alt="Rings Collection" class="w-1/2 lg:w-full object-contain">
+        <div
+          class="order-3 lg:order-5 bg-product-5 col-span-2 lg:col-span-2 flex items-center"
+        >
+          <div class="flex flex-row items-center gap-2">
+            <img
+              src="assets/RINGS_COLLECTION.png"
+              alt="Rings Collection"
+              class="w-1/2 lg:w-auto object-contain"
+            />
             <div class="flex flex-col">
               <h3 class="font-bold text-black text-sm">RINGS COLLECTION</h3>
               <a href="#" class="text-black text-sm">SHOP NOW</a>
@@ -194,26 +240,31 @@
           </div>
         </div>
         <!-- Collection Item 6 -->
-        <div class="relative bg-product-6 col-span-1 lg:col-span-1 flex items-center justify-center">
-          <div class="absolute bottom-4 left-4 text-left">
+        <div
+          class="order-5 lg:order-6 bg-product-6 col-span-1 lg:col-span-1 flex-col items-center"
+        >
+          <img
+            src="assets/PENDANTS_COLLECTION.png"
+            alt="Pendants Collection"
+            class="object-cover"
+          />
+          <div class="flex flex-col px-4 py-2">
             <h3 class="font-bold text-black text-sm">PENDANTS COLLECTION</h3>
             <a href="#" class="text-black text-sm">SHOP NOW</a>
           </div>
-          <img src="assets/PENDANTS_COLLECTION.png" alt="Pendants Collection" class="w-1/2 lg:w-full object-contain">
         </div>
       </div>
     </section>
-    
 
     <!-- Description Section -->
-    <section class="py-16">
+    <section class="py-4 lg:py-16">
       <div
-        class="container mx-auto px-4 lg:px-24 flex flex-col md:flex-row items-center"
+        class="container mx-auto px-4 lg:px-24 flex flex-col lg:flex-row items-center"
       >
         <h2 class="font-playfair text-4xl font-medium mb-8 block lg:hidden">
           Luxury Defined By Style, Not Price.
         </h2>
-        <div class="flex flex-col md:w-1/2 mb-8 md:mb-0 order-2 lg:order-1">
+        <div class="flex flex-col lg:w-1/2 mb-8 lg:mb-0 order-2 lg:order-1">
           <h2 class="font-playfair text-4xl font-medium mb-8 hidden lg:block">
             Luxury Defined By Style, Not Price.
           </h2>
@@ -237,7 +288,7 @@
             </p>
           </div>
         </div>
-        <div class="md:w-1/2 order-1 lg:order-2">
+        <div class="lg:w-1/2 order-1 lg:order-2">
           <img
             src="assets/section_luxury.png"
             alt="Jewellery Image"
@@ -249,70 +300,147 @@
 
     <!-- Best Selling Products Section -->
     <section class="py-16">
-      <div class="container mx-auto grid grid-cols-1 md:grid-cols-6 items-center gap-2">
+      <div
+        class="container mx-auto grid grid-cols-1 lg:grid-cols-6 items-center gap-2"
+      >
         <!-- Image Section -->
-        <div class="relative col-span-1 md:col-span-2">
-          <img src="assets/bg-our-best.png" alt="Best Selling Products" class="w-full h-full object-cover">
-          <div class="absolute inset-0 flex flex-col  items-start p-12 ">
-            <h2 class="font-playfair text-black text-3xl font-bold">Our Best Selling</h2>
-            <span class="font-playfair text-black text-3xl font-bold">Product</span>
-            <a href="#" class="mt-4 bg-primaryBrown text-white px-4 py-2">Shop Collections</a>
+        <div class="relative col-span-1 lg:col-span-2">
+          <img
+            src="assets/bg-our-best.png"
+            alt="Best Selling Products"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 flex flex-col items-start p-12">
+            <h2 class="font-playfair text-black text-3xl font-bold">
+              Our Best Selling
+            </h2>
+            <span class="font-playfair text-black text-3xl font-bold"
+              >Product</span
+            >
+            <a href="#" class="mt-4 bg-primaryBrown text-white px-4 py-2"
+              >Shop Collections</a
+            >
           </div>
         </div>
         <!-- Product Grid Section -->
-        <div class="col-span-1 md:col-span-4 grid grid-cols-2 sm:grid-cols-4 gap-2">
+        <div
+          class="col-span-1 lg:col-span-4 grid grid-cols-2 sm:grid-cols-4 gap-2"
+        >
           <!-- Product Item 1 -->
-          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
-            <img src="assets/STÉPHANE.png" alt="Product 1" class="w-full object-contain mb-4">
-            <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
-            <p class="text-gray-600 text-sm">$866.00 - $994.00</p>
+          <div
+            class="order-1 lg:order-1 bg_gray_best_selling p-4 flex flex-col items-center"
+          >
+            <img
+              src="assets/STÉPHANE.png"
+              alt="Product 1"
+              class="w-full object-contain mb-4"
+            />
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
+              <p class="text_gray_feature text-sm">$866.00 - $994.00</p>
+            </div>
           </div>
           <!-- Product Item 2 -->
-          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
-            <img src="assets/ANDRÉE.png" alt="Product 2" class="w-full object-contain mb-4">
-            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
-            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          <div
+            class="order-2 lg:order-2 bg_gray_best_selling p-4 flex flex-col items-center"
+          >
+            <img
+              src="assets/ANDRÉE.png"
+              alt="Product 2"
+              class="w-full object-contain mb-4"
+            />
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
+              <p class="text_gray_feature text-sm">$943.00 - $1,186.00</p>
+            </div>
           </div>
           <!-- Product Item 3 -->
-          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
-            <img src="assets/STÉPHANE.png" alt="Product 3" class="w-full object-contain mb-4">
-            <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
-            <p class="text-gray-600 text-sm">$866.00 - $994.00</p>
+          <div
+            class="order-4 lg:order-3 bg_gray_best_selling p-4 flex flex-col items-center"
+          >
+            <img
+              src="assets/STÉPHANE.png"
+              alt="Product 3"
+              class="w-full object-contain mb-4"
+            />
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
+              <p class="text_gray_feature text-sm">$866.00 - $994.00</p>
+            </div>
           </div>
           <!-- Product Item 4 -->
-          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
-            <img src="assets/ANDRÉE.png" alt="Product 4" class="w-full object-contain mb-4">
-            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
-            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          <div
+            class="order-3 lg:order-4 bg_gray_best_selling p-4 flex flex-col items-center"
+          >
+            <img
+              src="assets/ANDRÉE.png"
+              alt="Product 4"
+              class="w-full object-contain mb-4"
+            />
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
+              <p class="text_gray_feature text-sm">$943.00 - $1,186.00</p>
+            </div>
           </div>
           <!-- Product Item 5 -->
-          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
-            <img src="assets/STÉPHANE.png" alt="Product 5" class="w-full object-contain mb-4">
-            <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
-            <p class="text-gray-600 text-sm">$866.00 - $994.00</p>
+          <div
+            class="order-6 lg:order-5 bg_gray_best_selling p-4 flex flex-col items-center"
+          >
+            <img
+              src="assets/ANDRÉE.png"
+              alt="Product 6"
+              class="w-full object-contain mb-4"
+            />
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
+              <p class="text_gray_feature text-sm">$943.00 - $1,186.00</p>
+            </div>
           </div>
           <!-- Product Item 6 -->
-          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
-            <img src="assets/ANDRÉE.png" alt="Product 6" class="w-full object-contain mb-4">
-            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
-            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          <div
+            class="order-5 lg:order-6 bg_gray_best_selling p-4 flex flex-col items-center"
+          >
+            <img
+              src="assets/STÉPHANE.png"
+              alt="Product 5"
+              class="w-full object-contain mb-4"
+            />
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
+              <p class="text_gray_feature text-sm">$866.00 - $994.00</p>
+            </div>
           </div>
           <!-- Product Item 7 -->
-          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
-            <img src="assets/ANDRÉE.png" alt="Product 6" class="w-full object-contain mb-4">
-            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
-            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          <div
+            class="order-7 lg:order-7 bg_gray_best_selling p-4 flex flex-col items-center"
+          >
+            <img
+              src="assets/ANDRÉE.png"
+              alt="Product 6"
+              class="w-full object-contain mb-4"
+            />
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
+              <p class="text_gray_feature text-sm">$943.00 - $1,186.00</p>
+            </div>
           </div>
           <!-- Product Item 8 -->
-          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
-            <img src="assets/ANDRÉE.png" alt="Product 6" class="w-full object-contain mb-4">
-            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
-            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          <div
+            class="order-8 lg:order-8 bg_gray_best_selling p-4 flex flex-col items-center"
+          >
+            <img
+              src="assets/STÉPHANE.png"
+              alt="Product 6"
+              class="w-full object-contain mb-4"
+            />
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
+              <p class="text_gray_feature text-sm">$866.00 - $994.00</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    
 
     <!-- Recent Blogs Section -->
     <section class="bg-gray-100 py-16">
@@ -326,7 +454,7 @@
         >
           <!-- Blog Card 1 -->
           <div
-            class="flex-shrink-0 w-80 mr-4 relative bg-white shadow hover:shadow-lg transition-shadow duration-300"
+            class="flex-shrink-0 cursor-pointer w-80 mr-4 relative bg-white shadow hover:shadow-lg transition-shadow duration-300"
           >
             <div>
               <img
@@ -364,7 +492,7 @@
           </div>
           <!-- Blog Card 2 -->
           <div
-            class="flex-shrink-0 w-80 mr-4 relative bg-white shadow hover:shadow-lg transition-shadow duration-300"
+            class="flex-shrink-0 cursor-pointer w-80 mr-4 relative bg-white shadow hover:shadow-lg transition-shadow duration-300"
           >
             <div>
               <img
@@ -402,7 +530,7 @@
           </div>
           <!-- Blog Card 3 -->
           <div
-            class="flex-shrink-0 w-80 mr-4 relative bg-white shadow hover:shadow-lg transition-shadow duration-300"
+            class="flex-shrink-0 cursor-pointer w-80 mr-4 relative bg-white shadow hover:shadow-lg transition-shadow duration-300"
           >
             <div>
               <img
@@ -440,7 +568,7 @@
           </div>
           <!-- Blog Card 4 -->
           <div
-            class="flex-shrink-0 w-80 relative bg-white shadow hover:shadow-lg transition-shadow duration-300"
+            class="flex-shrink-0 cursor-pointer w-80 relative bg-white shadow hover:shadow-lg transition-shadow duration-300"
           >
             <div>
               <img
@@ -483,7 +611,9 @@
     <!-- Get Inspired Section -->
     <section class="bg-gray-50 py-16">
       <div class="container mx-auto px-4 mb-8 space-y-8">
-        <h2 class="text-3xl font-bold text-center ">Get Inspired</h2>
+        <h2 class="text-3xl font-playfair font-bold text-center">
+          Get Inspired
+        </h2>
         <div class="flex flex-row items-center justify-center gap-2">
           <p>Follow us at</p>
           <a href="#" class="text-yellow-500">
@@ -495,7 +625,7 @@
           <div
             class="carousel flex transition-transform duration-500 ease-in-out"
           >
-            <div class="flex space-x-4">
+            <div class="flex space-x-2">
               <img
                 src="assets//insp-1.png"
                 alt="Inspired Image 1"
@@ -536,106 +666,102 @@
             <button class="dot w-4 h-4 bg-gray-400 rounded-full mx-1"></button>
           </div>
         </div>
-       
       </div>
     </section>
 
     <!-- FREE DELIVERY Section -->
-    <section class="bg-primaryBrown py-4">
-      <div class="flex flex-wrap lg:flex-row items-center justify-center gap-x-8 gap-y-2">
-        <h2 class="text-2xl font-bold text-center text-white uppercase">Free Delivery</h2>
+    <section class="bg-primaryBrown py-6">
+      <div
+        class="flex flex-wrap lg:flex-row items-center justify-center gap-x-8 gap-y-2"
+      >
+        <h2 class="text-2xl font-bold text-center text-white uppercase">
+          Free Delivery
+        </h2>
         <span class="text-center text-white">|</span>
         <p class="text-center text-white">for orders above $199</p>
-        <button class="bg-white text-primaryBrown px-4 py-2 text-center text-xs uppercase font-cabin">Shop Collections</button>
+        <button
+          class="bg-white text-primaryBrown px-4 py-2 text-center text-xs uppercase font-cabin"
+        >
+          Shop Collections
+        </button>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="blackFooter text-gray-400 py-16">
-      <div
-        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8"
-      >
-        <div class="col-span-1 lg:col-span-2">
-          <h4 class="text-white font-bold mb-4 font-playfair">LE DIAMONDS</h4>
-          <p class="font-cabin mb-4">
+    <footer class="bg-black text-gray-400 py-16">
+      <div class="container mx-auto px-4 grid grid-cols-2 lg:grid-cols-6 gap-8">
+        <!-- Logo and Description Section -->
+        <div class="order-1 lg:order-1 col-span-2 lg:col-span-2 space-y-8">
+          <img src="assets/logo_footer.svg" alt="" />
+          <p class="font-cabin mb-4 lg:max-w-xs">
             With LE Diamonds, we hope to empower and inspire women of all ages,
             giving them the courage and confidence to power through each day
             with their choice of elegant and charming contemporary jewellery.
           </p>
           <div class="flex space-x-4">
-            <img src="assets/payment.png" alt="Payment" />
+            <img src="assets/payment.png" alt="Payment Methods" />
           </div>
         </div>
-        <div class="flex flex-row">
-          <div>
-            <h4 class="text-white font-bold mb-4">COLLECTIONS</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:underline font-cabin">Rings</a></li>
-              <li>
-                <a href="#" class="hover:underline font-cabin">Earrings</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline font-cabin">Necklaces</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline font-cabin">Bracelets</a>
-              </li>
-              <li>
-                <a href="#" class="hover:underline font-cabin">Pendants</a>
-              </li>
-            </ul>
+        <!-- Links Sections -->
+        <div class="order-2 lg:order-2 col-span-1 lg:col-span-1">
+          <h4 class="font-bold text-white mb-4">COLLECTIONS</h4>
+          <ul class="space-y-4">
+            <li><a href="#" class="text-white font-cabin">Rings</a></li>
+            <li><a href="#" class="text-white font-cabin">Earrings</a></li>
+            <li>
+              <a href="#" class="text-white font-cabin">Necklaces</a>
+            </li>
+            <li>
+              <a href="#" class="text-white font-cabin">Bracelets</a>
+            </li>
+            <li><a href="#" class="text-white font-cabin">Pendants</a></li>
+          </ul>
+        </div>
+        <div class="order-3 lg:order-3 col-span-1 lg:col-span-1">
+          <h4 class="text-white font-bold mb-4">INFORMATION</h4>
+          <ul class="space-y-4">
+            <li><a href="#" class="text-white font-cabin">FAQ</a></li>
+            <li>
+              <a href="#" class="text-white font-cabin">Help & Support</a>
+            </li>
+            <li>
+              <a href="#" class="text-white font-cabin">Terms of Service</a>
+            </li>
+            <li>
+              <a href="#" class="text-white font-cabin">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="order-4 lg:order-4 col-span-1 lg:col-span-1">
+          <h4 class="text-white font-bold mb-4 hidden lg:block">KNOW MORE</h4>
+          <ul class="space-y-4 hidden lg:block">
+            <li>
+              <a href="#" class="text-white font-cabin">All about clarities</a>
+            </li>
+            <li>
+              <a href="#" class="text-white font-cabin">Partnerships</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="order-5 lg:order-5 col-span-1 lg:col-span-1 lg:col-span-1 flex flex-col"
+        >
+          <h4 class="text-white font-bold mb-4">CONTACT INFO</h4>
+          <div class="space-y-4">
+            <p class="text-white font-cabin">(+603) 9541 8461</p>
+            <p class="text-white font-cabin">info@lediamonds.com</p>
           </div>
-          <div>
-            <h4 class="text-white font-bold mb-4">INFORMATION</h4>
-            <ul class="space-y-2">
-              <li><a href="#" class="hover:underline font-cabin">FAQ</a></li>
-              <li>
-                <a href="#" class="hover:underline font-cabin"
-                  >Help & Support</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:underline font-cabin"
-                  >Terms of Service</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:underline font-cabin"
-                  >Privacy Policy</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="text-white font-bold mb-4 font-cabin">KNOW MORE</h4>
-            <ul class="space-y-2">
-              <li>
-                <a href="#" class="hover:underline font-cabin"
-                  >All about clarities</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:underline font-cabin">Partnerships</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="text-white font-bold mb-4">CONTACT INFO</h4>
-            <p class="font-cabin">(+603) 9541 8461</p>
-            <p class="font-cabin">info@lediamonds.com</p>
-            <div class="flex space-x-4 mt-4">
-              <a href="#" class="text-white hover:text-gray-500"
-                ><i class="fab fa-facebook fa-lg"></i
-              ></a>
-              <a href="#" class="text-white hover:text-gray-500"
-                ><i class="fab fa-instagram fa-lg"></i
-              ></a>
-            </div>
+          <div class="flex space-x-4 mt-4 items-center lg:px-4 hidden lg:block">
+            <a href="#" class="text-white hover:text-gray-500"
+              ><i class="fab fa-facebook fa-lg"></i
+            ></a>
+            <a href="#" class="text-white hover:text-gray-500"
+              ><i class="fab fa-instagram fa-lg"></i
+            ></a>
           </div>
         </div>
       </div>
-      <div class="mt-8 text-right">
+      <div class="mt-8 w-full text-white text-center lg:text-right lg:px-8">
         <p>&copy; 2024 LE Diamonds - All Rights Reserved</p>
       </div>
     </footer>
@@ -644,7 +770,7 @@
     <div
       class="fixed bottom-4 right-4 bg-green-600 text-white rounded-full px-5 py-4 shadow-lg hover:bg-green-600 transition duration-300"
     >
-      <a href="https://wa.me/1234567890" target="_blank">
+      <a href="https://wa.me/6289561162271" target="_blank">
         <i class="fab fa-whatsapp text-4xl"></i>
       </a>
     </div>
