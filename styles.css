@@ -46,7 +46,51 @@ body {
 .bg_gray {
   background-color: #f7f7f7;
 }
-
+.bg_gray_best_selling {
+  background-color: #f7f7f7;
+}
+.bg-product-1{
+  background-image: url('assets/bg-col-1.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-product-2{
+  background-image: url('assets/bg-col-2.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-product-3{
+  background-image: url('assets/bg-col-3.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-product-4{
+  background-image: url('assets/bg-col-4.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-product-5{
+  background-image: url('assets/bg-col-5.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-product-6{
+  background-image: url('assets/bg-col-6.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bg-our-best{
+  background-image: url('assets/bg-our-best.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
 .hero-section {
   padding: 120px 0px 120px 0px;
   background-image: url('assets/hero-dekstop.svg');

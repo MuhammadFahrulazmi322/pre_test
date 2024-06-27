@@ -113,7 +113,7 @@
 
     <!-- Features Section -->
     <section
-      class="container mx-auto px-4 py-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center"
+      class="container mx-auto px-4 py-16 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8"
     >
       <div class="flex flex-row items-center gap-4">
         <img src="assets/truck.svg" alt="Free Delivery" />
@@ -147,54 +147,63 @@
     </section>
 
     <!-- Collections Section -->
-    <section class="bg-white py-16">
-      <div
-        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
-      >
-        <div class="collection-item">
-          <img src="https://placehold.co/300x300" alt="New Jewellery Design" />
-          <div class="collection-caption">
-            <h3 class="font-playfair">NEW JEWELLERY DESIGN</h3>
-            <a href="#" class="font-cabin">SHOP NOW</a>
+    <section class="py-16">
+      <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-5">
+        <!-- Collection Item 1 -->
+        <div class="relative bg-product-1 col-span-1 lg:col-span-3 flex items-center justify-center">
+          <div class="flex flex-row items-center gap-4">
+            <img src="assets/NEW_JEWELLERY_DESIGN.png" alt="New Jewellery Design" class="w-1/2 lg:w-full object-contain">
+            <div class="flex flex-col">
+              <h3 class="font-bold text-black text-sm">NEW JEWELLERY DESIGN</h3>
+              <a href="#" class="text-black text-sm">SHOP NOW</a>
+            </div>
           </div>
         </div>
-        <div class="collection-item">
-          <img src="https://placehold.co/300x300" alt="Earrings Collection" />
-          <div class="collection-caption">
-            <h3 class="font-playfair">EARRINGS COLLECTION</h3>
-            <a href="#" class="font-cabin">SHOP NOW</a>
+        <!-- Collection Item 2 -->
+        <div class="relative bg-product-2 col-span-1 lg:col-span-1 flex items-center justify-center">
+          <div class="absolute bottom-4 left-4 text-left">
+            <h3 class="font-bold text-black text-sm">EARRINGS COLLECTION</h3>
+            <a href="#" class="text-black text-sm">SHOP NOW</a>
+          </div>
+          <img src="assets/EARRINGS_COLLECTION.png" alt="Earrings Collection" class="w-1/2 lg:w-full object-contain">
+        </div>
+        <!-- Collection Item 3 -->
+        <div class="relative bg-product-3 col-span-1 lg:col-span-1 flex items-center justify-center">
+          <div class="absolute bottom-4 left-4 text-left">
+            <h3 class="font-bold text-black text-sm">BRACELETS COLLECTION</h3>
+            <a href="#" class="text-black text-sm">SHOP NOW</a>
+          </div>
+          <img src="assets/BRACELETS_COLLECTION.png" alt="Bracelets Collection" class="w-1/2 lg:w-full object-contain">
+        </div>
+        <!-- Collection Item 4 -->
+        <div class="relative bg-product-4 col-span-1 lg:col-span-1 flex items-center justify-center">
+          <div class="absolute bottom-4 left-4 text-left">
+            <h3 class="font-bold text-black text-sm">NECKLACES COLLECTION</h3>
+            <a href="#" class="text-black text-sm">SHOP NOW</a>
+          </div>
+          <img src="assets/NECKLACES_COLLECTION.png" alt="Necklaces Collection" class="w-1/2 lg:w-full object-contain">
+        </div>
+        <!-- Collection Item 5 -->
+        <div class="relative bg-product-5 col-span-1 lg:col-span-3 flex items-center justify-center">
+          <div class="flex flex-row items-center gap-4">
+            <img src="assets/RINGS_COLLECTION.png" alt="Rings Collection" class="w-1/2 lg:w-full object-contain">
+            <div class="flex flex-col">
+              <h3 class="font-bold text-black text-sm">RINGS COLLECTION</h3>
+              <a href="#" class="text-black text-sm">SHOP NOW</a>
+            </div>
           </div>
         </div>
-        <div class="collection-item">
-          <img src="https://placehold.co/300x300" alt="Bracelets Collection" />
-          <div class="collection-caption">
-            <h3 class="font-playfair">BRACELETS COLLECTION</h3>
-            <a href="#" class="font-cabin">SHOP NOW</a>
+        <!-- Collection Item 6 -->
+        <div class="relative bg-product-6 col-span-1 lg:col-span-1 flex items-center justify-center">
+          <div class="absolute bottom-4 left-4 text-left">
+            <h3 class="font-bold text-black text-sm">PENDANTS COLLECTION</h3>
+            <a href="#" class="text-black text-sm">SHOP NOW</a>
           </div>
-        </div>
-        <div class="collection-item">
-          <img src="https://placehold.co/300x300" alt="Necklaces Collection" />
-          <div class="collection-caption">
-            <h3 class="font-playfair">NECKLACES COLLECTION</h3>
-            <a href="#" class="font-cabin">SHOP NOW</a>
-          </div>
-        </div>
-        <div class="collection-item">
-          <img src="https://placehold.co/300x300" alt="Rings Collection" />
-          <div class="collection-caption">
-            <h3 class="font-playfair">RINGS COLLECTION</h3>
-            <a href="#" class="font-cabin">SHOP NOW</a>
-          </div>
-        </div>
-        <div class="collection-item">
-          <img src="https://placehold.co/300x300" alt="Pendants Collection" />
-          <div class="collection-caption">
-            <h3 class="font-playfair">PENDANTS COLLECTION</h3>
-            <a href="#" class="font-cabin">SHOP NOW</a>
-          </div>
+          <img src="assets/PENDANTS_COLLECTION.png" alt="Pendants Collection" class="w-1/2 lg:w-full object-contain">
         </div>
       </div>
     </section>
+    
 
     <!-- Description Section -->
     <section class="py-16">
@@ -239,53 +248,71 @@
     </section>
 
     <!-- Best Selling Products Section -->
-    <section class="container mx-auto px-4 py-16">
-      <h2 class="text-3xl font-bold text-center mb-8">
-        Our Best Selling Products
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="text-center">
-          <img
-            src="https://placehold.co/200x200"
-            alt="Product 1"
-            class="mx-auto mb-4 hover-grow"
-          />
-          <h3 class="font-bold mb-2">Stéphane</h3>
-          <p class="text-gray-600 mb-2">$665.00 - $749.00</p>
-          <a href="#" class="text-yellow-500">Shop Now</a>
+    <section class="py-16">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-6 items-center gap-2">
+        <!-- Image Section -->
+        <div class="relative col-span-1 md:col-span-2">
+          <img src="assets/bg-our-best.png" alt="Best Selling Products" class="w-full h-full object-cover">
+          <div class="absolute inset-0 flex flex-col  items-start p-12 ">
+            <h2 class="font-playfair text-black text-3xl font-bold">Our Best Selling</h2>
+            <span class="font-playfair text-black text-3xl font-bold">Product</span>
+            <a href="#" class="mt-4 bg-primaryBrown text-white px-4 py-2">Shop Collections</a>
+          </div>
         </div>
-        <div class="text-center">
-          <img
-            src="https://placehold.co/200x200"
-            alt="Product 2"
-            class="mx-auto mb-4 hover-grow"
-          />
-          <h3 class="font-bold mb-2">André</h3>
-          <p class="text-gray-600 mb-2">$845.00 - $1,000.00</p>
-          <a href="#" class="text-yellow-500">Shop Now</a>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://placehold.co/200x200"
-            alt="Product 3"
-            class="mx-auto mb-4 hover-grow"
-          />
-          <h3 class="font-bold mb-2">Stéphane</h3>
-          <p class="text-gray-600 mb-2">$665.00 - $749.00</p>
-          <a href="#" class="text-yellow-500">Shop Now</a>
-        </div>
-        <div class="text-center">
-          <img
-            src="https://placehold.co/200x200"
-            alt="Product 4"
-            class="mx-auto mb-4 hover-grow"
-          />
-          <h3 class="font-bold mb-2">André</h3>
-          <p class="text-gray-600 mb-2">$845.00 - $1,000.00</p>
-          <a href="#" class="text-yellow-500">Shop Now</a>
+        <!-- Product Grid Section -->
+        <div class="col-span-1 md:col-span-4 grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <!-- Product Item 1 -->
+          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
+            <img src="assets/STÉPHANE.png" alt="Product 1" class="w-full object-contain mb-4">
+            <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
+            <p class="text-gray-600 text-sm">$866.00 - $994.00</p>
+          </div>
+          <!-- Product Item 2 -->
+          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
+            <img src="assets/ANDRÉE.png" alt="Product 2" class="w-full object-contain mb-4">
+            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
+            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          </div>
+          <!-- Product Item 3 -->
+          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
+            <img src="assets/STÉPHANE.png" alt="Product 3" class="w-full object-contain mb-4">
+            <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
+            <p class="text-gray-600 text-sm">$866.00 - $994.00</p>
+          </div>
+          <!-- Product Item 4 -->
+          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
+            <img src="assets/ANDRÉE.png" alt="Product 4" class="w-full object-contain mb-4">
+            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
+            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          </div>
+          <!-- Product Item 5 -->
+          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
+            <img src="assets/STÉPHANE.png" alt="Product 5" class="w-full object-contain mb-4">
+            <h3 class="font-bold text-black text-sm">STÉPHANE</h3>
+            <p class="text-gray-600 text-sm">$866.00 - $994.00</p>
+          </div>
+          <!-- Product Item 6 -->
+          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
+            <img src="assets/ANDRÉE.png" alt="Product 6" class="w-full object-contain mb-4">
+            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
+            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          </div>
+          <!-- Product Item 7 -->
+          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
+            <img src="assets/ANDRÉE.png" alt="Product 6" class="w-full object-contain mb-4">
+            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
+            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          </div>
+          <!-- Product Item 8 -->
+          <div class="bg_gray_best_selling p-4 flex flex-col items-center">
+            <img src="assets/ANDRÉE.png" alt="Product 6" class="w-full object-contain mb-4">
+            <h3 class="font-bold text-black text-sm">ANDRÉE</h3>
+            <p class="text-gray-600 text-sm">$943.00 - $1,186.00</p>
+          </div>
         </div>
       </div>
     </section>
+    
 
     <!-- Recent Blogs Section -->
     <section class="bg-gray-100 py-16">
@@ -455,36 +482,48 @@
 
     <!-- Get Inspired Section -->
     <section class="bg-gray-50 py-16">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-8">Get Inspired</h2>
+      <div class="container mx-auto px-4 mb-8 space-y-8">
+        <h2 class="text-3xl font-bold text-center ">Get Inspired</h2>
+        <div class="flex flex-row items-center justify-center gap-2">
+          <p>Follow us at</p>
+          <a href="#" class="text-yellow-500">
+            <i class="fab fa-instagram fa-lg"></i>
+            le_diamonds
+          </a>
+        </div>
         <div class="relative overflow-hidden">
           <div
             class="carousel flex transition-transform duration-500 ease-in-out"
           >
             <div class="flex space-x-4">
               <img
-                src="https://placehold.co/150x150"
+                src="assets//insp-1.png"
                 alt="Inspired Image 1"
                 class="hover-grow"
               />
               <img
-                src="https://placehold.co/150x150"
+                src="assets/insp-2.png"
                 alt="Inspired Image 2"
                 class="hover-grow"
               />
               <img
-                src="https://placehold.co/150x150"
+                src="assets/insp-3.png"
                 alt="Inspired Image 3"
                 class="hover-grow"
               />
               <img
-                src="https://placehold.co/150x150"
+                src="assets/insp-4.png"
                 alt="Inspired Image 4"
                 class="hover-grow"
               />
               <img
-                src="https://placehold.co/150x150"
+                src="assets/insp-5.png"
                 alt="Inspired Image 5"
+                class="hover-grow"
+              />
+              <img
+                src="assets/insp-1.png"
+                alt="Inspired Image 6"
                 class="hover-grow"
               />
             </div>
@@ -497,9 +536,17 @@
             <button class="dot w-4 h-4 bg-gray-400 rounded-full mx-1"></button>
           </div>
         </div>
-        <p class="text-center mt-4">
-          Follow us at <a href="#" class="text-yellow-500">@le_diamonds</a>
-        </p>
+       
+      </div>
+    </section>
+
+    <!-- FREE DELIVERY Section -->
+    <section class="bg-primaryBrown py-4">
+      <div class="flex flex-wrap lg:flex-row items-center justify-center gap-x-8 gap-y-2">
+        <h2 class="text-2xl font-bold text-center text-white uppercase">Free Delivery</h2>
+        <span class="text-center text-white">|</span>
+        <p class="text-center text-white">for orders above $199</p>
+        <button class="bg-white text-primaryBrown px-4 py-2 text-center text-xs uppercase font-cabin">Shop Collections</button>
       </div>
     </section>
 
